@@ -1,0 +1,220 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={PDAD 2018},
+            pdfauthor={Luca Fonseca},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{PDAD 2018}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Luca Fonseca}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019-07-30}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+
+\begin{document}
+\maketitle
+
+\section{PDAD 2018}\label{pdad-2018}
+
+A PDAD 2018 visitou \textbf{21.908} domicílios e coletou informações de
+69.654 moradores.
+
+\subsection{Estrutura etária}\label{estrutura-etaria}
+
+A estrutura etária dos moradores do Distrito Federal é apresentada na
+Figura \ref{fig:piramide}.
+
+\begin{figure}[H]
+\includegraphics{relatório_files/figure-latex/piramide-1} \caption{Pirâmide etária \label{fig:piramide}}\label{fig:piramide}
+\end{figure}
+
+Os valores específicos podem ser verificados na tabela
+\ref{tab:piramide}.
+
+\begin{table}[!hb]
+\centering
+\begin{tabular}{llrrr}
+  \hline
+idade\_faixas & sexo & n & n\_low & n\_upp \\ 
+  \hline
+0 a 4 anos & Feminino & 96.993,00 & 90.751,18 & 103.234,82 \\ 
+  0 a 4 anos & Masculino & 102.054,00 & 96.298,94 & 107.809,06 \\ 
+  5 a 9 anos & Feminino & 88.139,00 & 84.280,28 & 91.997,72 \\ 
+  5 a 9 anos & Masculino & 92.894,00 & 87.908,00 & 97.880,00 \\ 
+  10 a 14 anos & Feminino & 103.596,00 & 97.016,81 & 110.175,19 \\ 
+  10 a 14 anos & Masculino & 107.671,00 & 101.371,70 & 113.970,30 \\ 
+  15 a 19 anos & Feminino & 114.842,00 & 108.552,76 & 121.131,24 \\ 
+  15 a 19 anos & Masculino & 117.348,00 & 113.302,15 & 121.393,85 \\ 
+  20 a 24 anos & Feminino & 121.383,00 & 116.077,67 & 126.688,33 \\ 
+  20 a 24 anos & Masculino & 117.944,00 & 112.684,75 & 123.203,25 \\ 
+  25 a 29 anos & Feminino & 126.544,00 & 120.745,52 & 132.342,48 \\ 
+  25 a 29 anos & Masculino & 119.316,00 & 114.827,44 & 123.804,56 \\ 
+  30 a 34 anos & Feminino & 137.590,00 & 130.611,01 & 144.568,99 \\ 
+  30 a 34 anos & Masculino & 126.393,00 & 119.632,17 & 133.153,83 \\ 
+  35 a 39 anos & Feminino & 142.423,00 & 136.611,53 & 148.234,47 \\ 
+  35 a 39 anos & Masculino & 125.263,00 & 119.152,44 & 131.373,56 \\ 
+  40 a 44 anos & Feminino & 125.699,00 & 120.103,34 & 131.294,66 \\ 
+  40 a 44 anos & Masculino & 109.759,00 & 104.143,37 & 115.374,63 \\ 
+  45 a 49 anos & Feminino & 104.923,00 & 100.152,08 & 109.693,92 \\ 
+  45 a 49 anos & Masculino & 92.130,00 & 88.669,72 & 95.590,28 \\ 
+  50 a 54 anos & Feminino & 91.483,00 & 87.057,71 & 95.908,29 \\ 
+  50 a 54 anos & Masculino & 78.669,00 & 73.776,45 & 83.561,55 \\ 
+  55 a 59 anos & Feminino & 74.973,00 & 70.754,33 & 79.191,67 \\ 
+  55 a 59 anos & Masculino & 60.808,00 & 57.156,19 & 64.459,81 \\ 
+  60 a 64 anos & Feminino & 58.291,00 & 54.712,43 & 61.869,57 \\ 
+  60 a 64 anos & Masculino & 45.354,00 & 43.208,53 & 47.499,47 \\ 
+  65 a 69 anos & Feminino & 44.177,00 & 41.491,08 & 46.862,92 \\ 
+  65 a 69 anos & Masculino & 33.157,00 & 30.881,30 & 35.432,70 \\ 
+  70 a 74 anos & Feminino & 30.557,00 & 28.264,83 & 32.849,17 \\ 
+  70 a 74 anos & Masculino & 21.855,00 & 20.319,54 & 23.390,46 \\ 
+  75 a 79 anos & Feminino & 20.222,00 & 18.371,93 & 22.072,07 \\ 
+  75 a 79 anos & Masculino & 13.985,00 & 12.338,57 & 15.631,43 \\ 
+  80 a 84 anos & Feminino & 12.318,00 & 11.013,56 & 13.622,44 \\ 
+  80 a 84 anos & Masculino & 8.251,00 & 6.890,00 & 9.612,00 \\ 
+  Mais de 85 anos & Feminino & 9.915,00 & 8.594,39 & 11.235,61 \\ 
+  Mais de 85 anos & Masculino & 4.935,00 & 3.907,00 & 5.963,00 \\ 
+   \hline
+\end{tabular}
+\caption{Pirâmide etária} 
+\label{tab:piramide}
+\end{table}
+
+\clearpage
+
+\subsection{Salários}\label{salarios}
+
+No que diz respeito aos salários, sua distribuição por faixas de salário
+mínimo\footnote{O salário considerado foi de R\$ 954,00} é apresentada
+na Figura \ref{fig:salarios}.
+
+\begin{figure}[H]
+\includegraphics{relatório_files/figure-latex/salarios-1} \caption{Salarios por faixa de SM \label{fig:salarios}}\label{fig:salarios}
+\end{figure}
+
+Os dados podem ser consultados na Tabela \ref{tab:salarios}.
+
+\begin{table}[!hb]
+\centering
+\begin{tabular}{lrrr}
+  \hline
+faixas\_salario & n & n\_low & n\_upp \\ 
+  \hline
+Até 1 salário & 149.808,34 & 143.584,27 & 156.032,41 \\ 
+  Mais de 1 até 2 salários & 307.819,42 & 300.403,61 & 315.235,23 \\ 
+  Mais de 2 até 4 salários & 185.752,94 & 178.620,43 & 192.885,44 \\ 
+  Mais de 4 até 10 salários & 166.799,10 & 160.089,33 & 173.508,86 \\ 
+  Mais de 10 até 20 salários & 56.617,22 & 52.190,52 & 61.043,92 \\ 
+  Mais de 20 salários & 15.292,09 & 13.332,94 & 17.251,24 \\ 
+   \hline
+\end{tabular}
+\caption{Salarios por faixa de SM} 
+\label{tab:salarios}
+\end{table}
+
+\clearpage
+\pagebreak
+
+\subsection{Esgotamento}\label{esgotamento}
+
+Por fim, o esgotamento sanitário é apresentado na Figura
+\ref{fig:esgotamento}
+
+\begin{figure}[H]
+\includegraphics{relatório_files/figure-latex/esgotamento-1} \caption{Esgotamento sanitário \label{fig:esgotamento}}\label{fig:esgotamento}
+\end{figure}
+
+Os números podem ser consultados na Tabela \ref{tab:esgotamento}.
+
+\begin{table}[!hb]
+\centering
+\begin{tabular}{lrrr}
+  \hline
+esgotamento\_caesb & n & n\_low & n\_upp \\ 
+  \hline
+Com Rede Geral (Caesb) & 0,93 & 0,93 & 0,93 \\ 
+  Sem Rede Geral (Caesb) & 0,07 & 0,07 & 0,07 \\ 
+   \hline
+\end{tabular}
+\caption{Esgotamento sanitário} 
+\label{tab:esgotamento}
+\end{table}
+
+
+\end{document}
